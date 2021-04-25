@@ -9,6 +9,7 @@ class Airport(models.Model):
     def __str__(self):
         return f"{self.city} ({self.code})"
 
+
 class Flight(models.Model):
     origin = models.CharField(max_length=64)
     destination = models.CharField(max_length=64)
